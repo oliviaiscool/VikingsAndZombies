@@ -87,10 +87,7 @@
 		<key>Vikings vs Zombies - New Size/Viking</key>
 		<dict/>
 		<key>Vikings vs Zombies - New Size/Viking/Walk/Walk-8.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
+		<dict/>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
