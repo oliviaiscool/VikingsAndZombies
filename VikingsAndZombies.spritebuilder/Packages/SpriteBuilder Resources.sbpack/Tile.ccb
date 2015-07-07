@@ -151,7 +151,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.20000000298023224</real>
 						</array>
 					</dict>
 					<dict>
@@ -161,8 +161,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.28745928406715393</real>
-							<real>0.28745928406715393</real>
+							<real>0.2800000011920929</real>
+							<real>0.2800000011920929</real>
 							<false/>
 							<integer>0</integer>
 						</array>

@@ -36,6 +36,9 @@ class Viking: CCSprite {
         }
 
     }
+    func slash() {
+        animationManager.runAnimationsForSequenceNamed("Slash(noJump)Animation")
+    }
     func standing() {
         //runs the standing animation when Viking is not moving
         animationManager.runAnimationsForSequenceNamed("StandAnimation")

@@ -81,11 +81,46 @@
 		<key>Sprites</key>
 		<dict/>
 		<key>Vikings vs Zombies - New Size/Background</key>
-		<dict/>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Vikings vs Zombies - New Size/Tiles</key>
-		<dict/>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Vikings vs Zombies - New Size/Viking</key>
 		<dict/>
+		<key>Vikings vs Zombies - New Size/Viking/Berzerk_Viking_Stomp</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Vikings vs Zombies - New Size/Viking/Block</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Vikings vs Zombies - New Size/Viking/Idle</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Vikings vs Zombies - New Size/Viking/Slash(noJump)</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Vikings vs Zombies - New Size/Viking/Walk</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Vikings vs Zombies - New Size/Viking/Walk/Walk-8.png</key>
 		<dict/>
 		<key>ccbResources</key>
