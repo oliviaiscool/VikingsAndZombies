@@ -11,13 +11,18 @@ import Foundation
 enum Side {
     case Left, Right
 }
+
 class Viking: CCSprite {
     //inits a var to hold the enum value of which side its on
     var side: Side = .Right
     
-    func left() {
+    func didLoadFromCCB () {
+        //self.physicsBody.sensor = true
+    }
+    
+    func left () {
         //sets the viking to face left
-        self.scaleX = -1
+        self.scaleX = -0.8
         animationManager.runAnimationsForSequenceNamed("WalkAnimation")
         //corects for the position of the viking when scalling it
         if side != .Left {
@@ -25,9 +30,10 @@ class Viking: CCSprite {
             side = .Left
         }
     }
-    func right(){
+    
+    func right () {
         //sets the viking to face right
-        self.scaleX = 1
+        self.scaleX = 0.8
         animationManager.runAnimationsForSequenceNamed("WalkAnimation")
         //corects for the position of the viking when scalling it
         if side != .Right {
@@ -36,10 +42,10 @@ class Viking: CCSprite {
         }
 
     }
-    func slash() {
+    func slash () {
         animationManager.runAnimationsForSequenceNamed("Slash(noJump)Animation")
     }
-    func standing() {
+    func standing () {
         //runs the standing animation when Viking is not moving
         animationManager.runAnimationsForSequenceNamed("StandAnimation")
 

@@ -87,8 +87,6 @@
 		</dict>
 		<key>Vikings vs Zombies - New Size/Tiles</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
@@ -111,8 +109,6 @@
 		</dict>
 		<key>Vikings vs Zombies - New Size/Viking/Slash(noJump)</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
@@ -123,6 +119,11 @@
 		</dict>
 		<key>Vikings vs Zombies - New Size/Viking/Walk/Walk-8.png</key>
 		<dict/>
+		<key>Vikings vs Zombies - New Size/Zombie/zombieWalk</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>

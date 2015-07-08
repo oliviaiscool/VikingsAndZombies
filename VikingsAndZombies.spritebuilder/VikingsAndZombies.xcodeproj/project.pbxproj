@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		045F63AC1B45F7E400372ADD /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F63AB1B45F7E400372ADD /* Tile.swift */; };
 		04CAAA031B488A460020DD45 /* Viking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAAA021B488A460020DD45 /* Viking.swift */; };
+		04FE47AE1B4C8521007A2653 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE47AD1B4C8521007A2653 /* Zombie.swift */; };
 		5B121030197484FA004C1E1D /* VikingsAndZombiesActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* VikingsAndZombiesActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -152,6 +153,7 @@
 /* Begin PBXFileReference section */
 		045F63AB1B45F7E400372ADD /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		04CAAA021B488A460020DD45 /* Viking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viking.swift; sourceTree = "<group>"; };
+		04FE47AD1B4C8521007A2653 /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
+				04FE47AD1B4C8521007A2653 /* Zombie.swift */,
 				04CAAA021B488A460020DD45 /* Viking.swift */,
 				045F63AB1B45F7E400372ADD /* Tile.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -821,6 +824,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				04FE47AE1B4C8521007A2653 /* Zombie.swift in Sources */,
 				04CAAA031B488A460020DD45 /* Viking.swift in Sources */,
 				045F63AC1B45F7E400372ADD /* Tile.swift in Sources */,
 			);

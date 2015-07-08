@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>2</integer>
+	<integer>4</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -371,24 +371,6 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Vikings vs Zombies - New Size/Viking/Slash(noJump)/Slash(noJump)-2.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.13333334028720856</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
 								<string>Vikings vs Zombies - New Size/Viking/Slash(noJump)/Slash(noJump)-3.png</string>
 								<string>Use regular file</string>
 							</array>
@@ -436,7 +418,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<true/>
+			<false/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -444,7 +426,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>good</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -458,40 +440,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>-65.088310241699219</real>
+					<real>0.8034060001373291</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>159</real>
+					<real>-60.406513214111328</real>
+					<real>130.87992858886719</real>
 				</array>
 				<array>
-					<real>160</real>
-					<real>159</real>
+					<real>53.014217376708984</real>
+					<real>132.19410705566406</real>
 				</array>
 				<array>
-					<real>160</real>
-					<real>0.0</real>
+					<real>72.516586303710938</real>
+					<real>1.5785723924636841</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>160</real>
-						<real>0.0</real>
+						<real>72.516586303710938</real>
+						<real>1.5785723924636841</real>
 					</array>
 					<array>
-						<real>160</real>
-						<real>159</real>
+						<real>53.014217376708984</real>
+						<real>132.19410705566406</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>159</real>
+						<real>-60.406513214111328</real>
+						<real>130.87992858886719</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>-65.088310241699219</real>
+						<real>0.8034060001373291</real>
 					</array>
 				</array>
 			</array>
@@ -527,7 +509,7 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>1</real>
+					<real>0.5</real>
 					<real>0.0</real>
 				</array>
 			</dict>
@@ -557,7 +539,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Vikings vs Zombies - New Size/Viking/Idle/Idle-1.png</string>
+					<string>Vikings vs Zombies - New Size/Viking/Slash(noJump)/Slash(noJump)-1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -593,6 +575,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>
@@ -686,7 +670,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.5</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -722,7 +706,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.26666668057441711</real>
+			<real>0.033333335071802139</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
