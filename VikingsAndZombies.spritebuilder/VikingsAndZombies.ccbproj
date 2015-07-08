@@ -119,6 +119,13 @@
 		</dict>
 		<key>Vikings vs Zombies - New Size/Viking/Walk/Walk-8.png</key>
 		<dict/>
+		<key>Vikings vs Zombies - New Size/Zombie/zombieDeath</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Vikings vs Zombies - New Size/Zombie/zombieWalk</key>
 		<dict>
 			<key>isSmartSpriteSheet</key>

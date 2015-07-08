@@ -418,7 +418,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<false/>
+			<true/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -426,7 +426,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string>good</string>
+			<string></string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -440,40 +440,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-65.088310241699219</real>
-					<real>0.8034060001373291</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>-60.406513214111328</real>
-					<real>130.87992858886719</real>
+					<real>0.0</real>
+					<real>129</real>
 				</array>
 				<array>
-					<real>53.014217376708984</real>
-					<real>132.19410705566406</real>
+					<real>174</real>
+					<real>129</real>
 				</array>
 				<array>
-					<real>72.516586303710938</real>
-					<real>1.5785723924636841</real>
+					<real>174</real>
+					<real>0.0</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>72.516586303710938</real>
-						<real>1.5785723924636841</real>
+						<real>174</real>
+						<real>0.0</real>
 					</array>
 					<array>
-						<real>53.014217376708984</real>
-						<real>132.19410705566406</real>
+						<real>174</real>
+						<real>129</real>
 					</array>
 					<array>
-						<real>-60.406513214111328</real>
-						<real>130.87992858886719</real>
+						<real>0.0</real>
+						<real>129</real>
 					</array>
 					<array>
-						<real>-65.088310241699219</real>
-						<real>0.8034060001373291</real>
+						<real>0.0</real>
+						<real>0.0</real>
 					</array>
 				</array>
 			</array>

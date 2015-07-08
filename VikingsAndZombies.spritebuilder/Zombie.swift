@@ -16,7 +16,18 @@ class Zombie: CCSprite {
     
     func didLoadFromCCB(){
         self.scale = 0.8
-        //self.physicsBody.sensor = true
     }
+    func death() {
+        animationManager.runAnimationsForSequenceNamed("DeathAnimation")
+        self.zOrder -= 2
+        self.physicsBody.sensor = true
+        
+    }
+    func remove(){
+        if animationManager.runningSequenceName != "DeathAnimation" {
+            
+        }
+    }
+    
     
 }

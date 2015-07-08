@@ -40,14 +40,33 @@ class Viking: CCSprite {
             self.position.x = self.position.x - self.contentSizeInPoints.width
             side = .Right
         }
-
+        
     }
     func slash () {
+        if side == .Right{
+            scale = 1
+        }
+        if side == .Left{
+            scaleX = -1
+            scaleY = 1
+        }
         animationManager.runAnimationsForSequenceNamed("Slash(noJump)Animation")
+
+    }
+    func fixSize(){
+        if animationManager.runningSequenceName != "Slash(noJump)Animation" {
+            if side == .Right{
+                scale = 0.8
+            }
+            if side == .Left{
+                scaleX = -0.8
+                scaleY = 0.8
+            }
+        }
     }
     func standing () {
         //runs the standing animation when Viking is not moving
         animationManager.runAnimationsForSequenceNamed("StandAnimation")
-
+        
     }
 }
