@@ -451,7 +451,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.30000001192092896</real>
+							<real>0.26666668057441711</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -469,7 +469,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.43333333730697632</real>
+							<real>0.36666667461395264</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -487,7 +487,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.56666666269302368</real>
+							<real>0.46666666865348816</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -505,7 +505,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.69999998807907104</real>
+							<real>0.56666666269302368</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -523,7 +523,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.83333331346511841</real>
+							<real>0.60000002384185791</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -541,7 +541,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.96666663885116577</real>
+							<real>0.63333332538604736</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -559,7 +559,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>1.1000000238418579</real>
+							<real>0.66666668653488159</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -577,7 +577,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>1.2333333492279053</real>
+							<real>0.69999998807907104</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -595,7 +595,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>1.3666666746139526</real>
+							<real>0.73333334922790527</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -879,7 +879,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.5</real>
+			<real>0.93333333730697632</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -915,7 +915,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.26666668057441711</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -945,13 +945,13 @@
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>1.3666666746139526</real>
+			<real>0.73333334922790527</real>
 			<key>name</key>
 			<string>DeathAnimation</string>
 			<key>offset</key>
-			<real>0.64144539833068848</real>
+			<real>0.0</real>
 			<key>position</key>
-			<real>1.3666666746139526</real>
+			<real>0.73333334922790527</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

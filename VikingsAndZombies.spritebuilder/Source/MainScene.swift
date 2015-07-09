@@ -41,7 +41,7 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
                     
                 } else if !zombie.physicsBody.sensor{
                     println("hi")
-                    if viking.animationManager.runningSequenceName != "DeathAnimation" {
+            if viking.animationManager.runningSequenceName != "DeathAnimation" {
                         viking.animationManager.runAnimationsForSequenceNamed("DeathAnimation")
                         for zombie in zombieArray {
                             zombie.death()
