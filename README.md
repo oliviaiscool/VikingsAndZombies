@@ -22,7 +22,7 @@ To kill as many zombies as posible and collect coins while aslso tryig to stay a
 # MVP milestone 
 
 # TO DO LIST
-- add Vikgin death scene #DONE
+- add Vikgin death scene √
 - add jumping and blaocking
 - make the zombie prob go up every sombie death
 - add boss
