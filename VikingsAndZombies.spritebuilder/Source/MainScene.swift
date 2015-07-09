@@ -5,7 +5,7 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     weak var rightMoveLabel: CCLabelTTF!
     weak var leftAttackLabel: CCLabelTTF!
     weak var rightAttackLabel: CCLabelTTF!
-    var scrollSpeed = CGFloat(80)
+    var scrollSpeed = CGFloat(60)
     var tiles: [CCNode] = [] // creates array for tiles
     weak var gamePhysicsNode : CCPhysicsNode! //links physiscs node
     weak var viking: Viking! //links viking sprite from MainScene to code
@@ -28,13 +28,12 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     
     func killZombie() {
         for zombie in zombieArray {
-            var zombieInRangeForSlash = abs((viking.position.x - zombie.position.x)) <= CGFloat(viking.scaleY) * viking.contentSize.width - CGFloat(10)
+            var zombieInRangeForSlash = abs((viking.position.x - zombie.position.x)) <= (CGFloat(viking.scaleY) * viking.contentSize.width)/2
             if viking.animationManager.runningSequenceName == "Slash(noJump)Animation" && zombieInRangeForSlash {
                 zombie.death()
-            }else if abs(Int(zombie.position.y - viking.position.y == viking.position.y)) < 3  {
-                
+            }else if !zombie.physicsBody.sensor {
                 if zombieInRangeForSlash {
-                    viking.removeFromParent()
+                    viking.visible = false
                 }
             }
 
