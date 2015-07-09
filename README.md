@@ -19,10 +19,10 @@ To kill as many zombies as posible and collect coins while aslso tryig to stay a
 - Classes: Viking, Zombie, Tile, Boss, MainScene 
 - CCBS: Viking, Tall Zombie, Short Zombie, Boss, MainScene
 
-# MVP milestone
+# MVP milestone 
 
 # TO DO LIST
-- add Vikgin death scene
+- add Vikgin death scene #DONE
 - add jumping and blaocking
 - make the zombie prob go up every sombie death
 - add boss
