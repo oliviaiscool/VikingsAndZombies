@@ -25,7 +25,7 @@ class Zombie: CCSprite {
     }
     func remove(){
         if animationManager.runningSequenceName != "DeathAnimation" {
-            
+            removeFromParent()
         }
     }
     

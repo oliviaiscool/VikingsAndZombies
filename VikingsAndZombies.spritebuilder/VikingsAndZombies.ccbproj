@@ -102,6 +102,13 @@
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
+		<key>Vikings vs Zombies - New Size/Viking/Death</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Vikings vs Zombies - New Size/Viking/Idle</key>
 		<dict>
 			<key>isSmartSpriteSheet</key>

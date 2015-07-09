@@ -11,6 +11,7 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     weak var viking: Viking! //links viking sprite from MainScene to code
     var vikingSpeed: Int! = 0 //inits the viking speed as an int and nothing
     var zombieArray: [Zombie] = []
+    var gameOver: Bool = false
     func didLoadFromCCB () {
         userInteractionEnabled = true //enables user interaction
         //gamePhysicsNode.debugDraw = true
@@ -25,20 +26,34 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
         }
     }
     
-    
     func killZombie() {
+        
         for zombie in zombieArray {
-            var zombieInRangeForSlash = abs((viking.position.x - zombie.position.x)) <= (CGFloat(viking.scaleY) * viking.contentSize.width)/2
-            if viking.animationManager.runningSequenceName == "Slash(noJump)Animation" && zombieInRangeForSlash {
-                zombie.death()
-            }else if !zombie.physicsBody.sensor {
-                if zombieInRangeForSlash {
-                    viking.visible = false
+            //println(abs(zombie.positionInPoints.y - viking.positionInPoints.y) < CGFloat(2))
+            
+            var zombieInRangeForSlash = abs(viking.positionInPoints.x - zombie.positionInPoints.x) <= abs(CGFloat(viking.scaleXInPoints)) * viking.contentSize.width * CGFloat(0.85)
+            
+            if zombieInRangeForSlash {
+                println("in range")
+                if viking.animationManager.runningSequenceName == "Slash(noJump)Animation" {
+                    zombie.death()
+                    zombie.remove()
+                    
+                } else if !zombie.physicsBody.sensor{
+                    println("hi")
+                    if viking.animationManager.runningSequenceName != "DeathAnimation" {
+                        viking.animationManager.runAnimationsForSequenceNamed("DeathAnimation")
+                        for zombie in zombieArray {
+                            zombie.death()
+                            zombie.remove()
+                        }
+                        gameOver = true
+                    }
                 }
             }
-
         }
     }
+    
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
         //finds which side of the screen the user touched and animates the viking accordly
         if touch.locationInWorld().y < tiles[1].contentSizeInPoints.height * 0.75 {
@@ -93,24 +108,26 @@ class MainScene: CCNode, CCPhysicsCollisionDelegate {
     }
     
     override func update(delta: CCTime) {
-        viking.fixSize()
-        killZombie()
-        //updates viking position
-        if !leftMoveLabel.visible && !rightMoveLabel.visible && !leftAttackLabel.visible && !rightAttackLabel.visible {
-            gamePhysicsNode.position = ccp(gamePhysicsNode.position.x - scrollSpeed * CGFloat(delta), gamePhysicsNode.position.y)
-            let scale = CCDirector.sharedDirector().contentScaleFactor
-            gamePhysicsNode.position = ccp(round(gamePhysicsNode.position.x * scale) / scale, round(gamePhysicsNode.position.y * scale) / scale)
-        }
-        if viking.animationManager.runningSequenceName == "WalkAnimation"{
-            viking.positionInPoints.x = viking.position.x + CGFloat(vikingSpeed) * CGFloat(delta)
-            spawnZombie()
-        }
-        
-        for tile in tiles {
-            let tileWorldPosition = gamePhysicsNode.convertToWorldSpace(tile.position)
-            let tileScreenPosition = convertToNodeSpace(tileWorldPosition)
-            if tileScreenPosition.x <= (-tile.contentSize.width) {
-                tile.position = ccp(tile.position.x + tile.contentSize.width * 10, tile.position.y)
+        if !gameOver {
+            viking.fixSize()
+            killZombie()
+            //updates viking position
+            if !leftMoveLabel.visible && !rightMoveLabel.visible && !leftAttackLabel.visible && !rightAttackLabel.visible {
+                gamePhysicsNode.position = ccp(gamePhysicsNode.position.x - scrollSpeed * CGFloat(delta), gamePhysicsNode.position.y)
+                let scale = CCDirector.sharedDirector().contentScaleFactor
+                gamePhysicsNode.position = ccp(round(gamePhysicsNode.position.x * scale) / scale, round(gamePhysicsNode.position.y * scale) / scale)
+            }
+            if viking.animationManager.runningSequenceName == "WalkAnimation"{
+                viking.positionInPoints.x = viking.position.x + CGFloat(vikingSpeed) * CGFloat(delta)
+                spawnZombie()
+            }
+            
+            for tile in tiles {
+                let tileWorldPosition = gamePhysicsNode.convertToWorldSpace(tile.position)
+                let tileScreenPosition = convertToNodeSpace(tileWorldPosition)
+                if tileScreenPosition.x <= (-tile.contentSize.width) {
+                    tile.position = ccp(tile.position.x + tile.contentSize.width * 10, tile.position.y)
+                }
             }
         }
     }
